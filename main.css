@@ -1,15 +1,10 @@
 /*
-
 FONTS:
-
 'Josefin Sans'
 'Noto Serif'
 'Dancing Script'
-
 COLORS:
-
 light tan: #eeebda
-
 */
 body{
     font-family: 'Noto Serif', serif;
@@ -39,13 +34,19 @@ img{
     */
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+
+
 }
 #site-header{
     /*
         TODO
         - Flexbox property here
-        
+
     */
+
+
+    flex-basis: 100%;
 }
 #site-header div{
     text-align: center;
@@ -136,8 +137,7 @@ main{
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
-    display: flex;
-    flex-direction: column;
+  flex: 2;
 }
 
 
@@ -151,10 +151,8 @@ aside{
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 
+    flex: 1;
 }
 aside h3{
     text-align: center;
